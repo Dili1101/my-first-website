@@ -17,10 +17,10 @@
 
   <div class="container">
     <h1>Biz bilan bog‘laning</h1>
-    <form>
-      <input type="text" placeholder="Ismingiz"><br><br>
-      <input type="email" placeholder="Email manzilingiz"><br><br>
-      <textarea rows="5" placeholder="Xabaringiz"></textarea><br><br>
+    <form action="https://formspree.io/f/xnnzdkql" method="POST">
+      <input type="text" name="name" placeholder="Ismingiz" required><br><br>
+      <input type="email" name="email" placeholder="Email manzilingiz" required><br><br>
+      <textarea name="message" rows="5" placeholder="Xabaringiz" required></textarea><br><br>
       <button type="submit">Yuborish</button>
     </form>
   </div>
