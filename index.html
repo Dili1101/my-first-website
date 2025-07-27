@@ -3,18 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mening Birinchi Saytim</title>
+  <title>Mening Saytim</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Salom, bu mening birinchi saytim!</h1>
-  <button id="btn">Meni bos!</button>
+  <nav>
+    <ul>
+      <li><a href="#">Bosh sahifa</a></li>
+      <li><a href="#">Haqida</a></li>
+      <li><a href="#">Aloqa</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Mening shaxsiy saytimgiz!</h1>
+    <img src="https://picsum.photos/300/200" alt="Tasodifiy rasm">
+    <button id="btn">Fon rangini o'zgartir!</button>
+  </div>
 
   <script>
     const btn = document.getElementById("btn");
+    const colors = ["lightblue", "lightgreen", "pink", "yellow", "orange"];
+    let index = 0;
+
     btn.addEventListener("click", () => {
-      alert("Tugmani bosding! Zo'r ishlayapsan 😎");
-      document.body.style.backgroundColor = "lightblue";
+      document.body.style.background = colors[index];
+      index = (index + 1) % colors.length;
+      alert("Fon rang o'zgardi!");
     });
   </script>
 </body>
