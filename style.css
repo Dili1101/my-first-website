@@ -1,0 +1,30 @@
+
+    body {
+    background-color: #f0f0f0;  /* Orqa fon rang */
+    font-family: Arial, sans-serif;
+    text-align: center;         /* Matnni o‘rtaga */
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
