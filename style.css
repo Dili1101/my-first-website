@@ -78,3 +78,16 @@ form button {
 form button:hover {
   background-color: #357ab8;
 }
+/* ANIMATSIYA */
+.container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
